@@ -1,0 +1,43 @@
+eudi_lib_openid4vp_vci
+Copyright (c) 2026 the eudi_lib_openid4vp_vci contributors
+
+This product is a Cangjie (仓颉) port of the EU Digital Identity Wallet
+OpenID4VCI and OpenID4VP / SIOPv2 libraries for Swift:
+
+    eudi-lib-ios-openid4vci-swift
+    Copyright (c) European Commission
+    Licensed under the Apache License, Version 2.0
+    https://github.com/eu-digital-identity-wallet/eudi-lib-ios-openid4vci-swift
+
+    eudi-lib-ios-siop-openid4vp-swift
+    Copyright (c) European Commission
+    Licensed under the Apache License, Version 2.0
+    https://github.com/eu-digital-identity-wallet/eudi-lib-ios-siop-openid4vp-swift
+
+The protocol logic (credential offer resolution, authorization, PKCE, DPoP,
+credential requests, presentation request resolution and response) is
+reimplemented in Cangjie with the original Swift sources used as the
+reference implementation.
+
+This product depends on and/or bundles the following third-party software:
+
+  - eudi_lib_core_crypto (Apache License 2.0; consumed as a sibling
+    third_party checkout, not vendored) — ECDSA P-256 / ECDH / AES-GCM /
+    digest / JWS primitives backed by Cangjie stdx.crypto.
+
+  - eudi_lib_jose, eudi_lib_sdjwt, eudi_lib_x509 (Apache License 2.0;
+    consumed as sibling third_party checkouts, not vendored).
+
+  - cangjie-stdx 1.1.3.1 (Apache License 2.0) — Cangjie extended standard
+    library runtime, bundled under entry/libs/stdx/. See the LICENSE file
+    shipped inside the upstream cangjie-stdx release archive.
+
+  - OpenSSL runtime libraries (libcrypto_openssl.z.so, libssl_openssl.z.so,
+    Apache License 2.0) and libsecurec.so, bundled under
+    entry/libs/arm64-v8a/ for on-device execution of stdx.crypto.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this project except in compliance with the License. You may obtain a
+copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0

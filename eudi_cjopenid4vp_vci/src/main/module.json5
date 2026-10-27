@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "eudi_cjopenid4vp_vci",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}
